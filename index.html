@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Sitio Web</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --bg: #0d0d0d;
+      --card-bg: #1a1a1a;
+      --primary: #8a2be2;
+      --text-dark: #1a1a1a;
+      --text-light: #666;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #0d0d0d, #1a0033);
+      color: #e6e6e6;
+    }
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    nav {
+      display:flex;
+      justify-content:center;
+      gap:2rem;
+      padding:1rem 0;
+      background:#111;
+      margin-top:-20px;
+      border-radius:20px;
+      width:90%;
+      max-width:800px;
+      margin-left:auto;
+      margin-right:auto;
+      box-shadow:0 0 20px #8a2be2;
+    }
+    nav a {
+      color:#fff;
+      text-decoration:none;
+      font-weight:bold;
+      font-size:1.1rem;
+      text-shadow:0 0 10px #8a2be2;
+      transition:0.3s;
+    }
+    nav a:hover {
+      color:#8a2be2;
+      text-shadow:0 0 20px #8a2be2;
+      transform:scale(1.1);
+    }
+    main {
+      width: 90%;
+      max-width: 900px;
+      margin: 2rem auto;
+      display: grid;
+      gap: 2rem;
+    }
+    section {
+      background: #111;
+      padding: 1.5rem;
+      border-radius: 16px;
+      border: 1px solid #8a2be2;
+      box-shadow:0 0 25px rgba(138,43,226,0.5);
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 16px;
+      border: 1px solid #8a2be2;
+      box-shadow: 0 0 20px rgba(138,43,226,0.3);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--text-light);
+    }
+      img {
+      max-width: 100%;
+      border-radius: 14px;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    }
+  </style>
+</head>
+<body>
+  <header style="background:#000; padding:3rem 1rem; text-align:center; border-bottom-left-radius:30px; border-bottom-right-radius:30px; box-shadow:0 0 25px #8a2be2; background-image:url('https://wallpapers.com/images/hd/4k-gaming-background-gcne64id1qj8v50y.jpg'); background-size:cover; background-position:center;">
+    <h1 style="font-size:3rem; text-shadow:0 0 15px #8a2be2; color:#fff;">Bienvenido a mi sitio gamer</h1>
+  </header>
+
+  <nav style="background:#444; padding:0.5rem; text-align:center;">
+    <a href="#inicio" style="color:#fff; margin:0 1rem; text-decoration:none;">Inicio</a>
+    <a href="#proyectos" style="color:#fff; margin:0 1rem; text-decoration:none;">Proyectos</a>
+    <a href="#contacto" style="color:#fff; margin:0 1rem; text-decoration:none;">Contacto</a>
+  </nav>
+
+  <main>
+    <section id="inicio">
+      <h2>Mi proyecto en GitHub Pages</h2>
+      <p>Este es un ejemplo mejorado de una página web para tu repositorio.</p>
+    </section>
+
+    <section id="proyectos" style="margin-top:2rem;">
+      <h2>Proyectos</h2>
+      <p>Aquí podrás listar tus proyectos destacados.</p>
+    </section>
+
+    <section id="contacto" style="margin-top:2rem;">
+      <h2>Contacto</h2>
+      <p>Puedes añadir tu correo o redes sociales aquí.</p>
+    </section>
+    <section id="consolas" style="background: var(--card-bg); padding: 1.5rem; border-radius: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.08);">
+      <h2>🎮 Consolas</h2>
+      <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+        <div style="flex:1; min-width:200px; background:#fafafa; padding:1rem; border-radius:12px; text-align:center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/PS5_console.png" alt="PlayStation" style="width:100%; border-radius:10px;" />
+          <h3>PlayStation</h3>
+          <p>Guías, juegos y configuraciones para PS4 y PS5.</p>
+        </div>
+        <div style="flex:1; min-width:200px; background:#fafafa; padding:1rem; border-radius:12px; text-align:center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/Xbox_series_X.png" alt="Xbox" style="width:100%; border-radius:10px;" />
+          <h3>Xbox</h3>
+          <p>Información de Xbox One y Xbox Series.</p>
+        </div>
+        <div style="flex:1; min-width:200px; background:#fafafa; padding:1rem; border-radius:12px; text-align:center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Nintendo_Switch_Console.png" alt="Nintendo" style="width:100%; border-radius:10px;" />
+          <h3>Nintendo</h3>
+          <p>Proyectos y novedades de Switch.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pc" style="background: var(--card-bg); padding: 1.5rem; border-radius: 16px; box-shadow: 0 4px 10px rgba(0,0,0,0.08);">
+      <h2>💻 PC</h2>
+      <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+        <div style="flex:1; min-width:200px; background:#fafafa; padding:1rem; border-radius:12px; text-align:center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Corsair_ONE_PC.png" alt="Builds" style="width:100%; border-radius:10px;" />
+          <h3>Builds</h3>
+          <p>Configuraciones recomendadas para gaming, trabajo o streaming.</p>
+        </div>
+        <div style="flex:1; min-width:200px; background:#fafafa; padding:1rem; border-radius:12px; text-align:center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2012.png" alt="Software" style="width:100%; border-radius:10px;" />
+          <h3>Software</h3>
+          <p>Programas útiles, optimización y utilidades.</p>
+        </div>
+        <div style="flex:1; min-width:200px; background:#fafafa; padding:1rem; border-radius:12px; text-align:center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.png" alt="Juegos PC" style="width:100%; border-radius:10px;" />
+          <h3>Juegos de PC</h3>
+          <p>Recomendaciones, guías y rendimiento en diferentes hardware.</p>
+        </div>
+      </div>
+    </section>
+
+</main>
+
+  <footer>
+    <p>© 2025 Mi Sitio Web</p>
+  </footer>
+</body>
+</html>
